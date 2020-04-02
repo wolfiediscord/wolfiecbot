@@ -1,0 +1,27 @@
+{
+  "name": "discordjs-bot",
+  "version": "1.0.0",
+  "description": "A Discord.js bot which uses a Command Handler",
+  "main": "node index.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "discord.js": "^12.0.2",
+    "express": "^4.17.1",
+    "sqlite": "^3.0.3"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
