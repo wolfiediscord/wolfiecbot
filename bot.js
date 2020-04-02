@@ -7,6 +7,7 @@ const express = require("express");
 const app = express();
 // to get fancy embeds
 const { Client, MessageEmbed } = require("discord.js");
+// more dependencies
 const sql = require("sqlite");
 const dateFormat = require("dateformat");
 // a bunch of config stuff
@@ -93,6 +94,7 @@ client.on('warn', (warn) => {
   console.log(`[WARN] ${warn}`)
 })
 
+// checks when the bot gets pinged and logs it
 app.get("/", (request, response) => {
 
   let currentTime = dateFormat(Date.now());
@@ -120,12 +122,15 @@ setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
 
+// our message event. this is where we do the command handling
 client.on("message", message => {
    let currentTime = dateFormat(Date.now());
+  // prefix handling
   const prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8"));
+  // checkpoints
   if(!message.guild) return;
   if (message.author.bot) return;
-
+// sets default prefix if there isn't one
   if (!prefixes[message.guild.id]) {
     prefixes[message.guild.id] = {
       prefixes: process.env.PREFIX
@@ -143,6 +148,7 @@ client.on("message", message => {
       `Hello! My current prefix is **${prefix}**! Type ${prefix}help if you need to find the commands.`
     );
   }
+  // if message isn't a command
   if (message.content.indexOf(prefix) !== 0) return;
   
   // This is the best way to define args. Trust me.
@@ -183,7 +189,6 @@ client.on("message", message => {
   }
 });
 client.on("guildCreate", message => {
-  
    let currentTime = dateFormat(Date.now());
   console.log(`[INFO] Joined a new guild.`);
   if(logchannelID) {
