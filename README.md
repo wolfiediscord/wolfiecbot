@@ -6,7 +6,7 @@ WolfieCBOT is a Discord bot which uses the Discord.js Library, with this bot we'
 
 You'll need:
  - A [Discord account](https://discordapp.com/register)
- - A Glitch Account
+ - A [Glitch Account](https://glitch.com)
  - Permission to add accounts to a server, or your own server
 
 ## Steps to set up:
