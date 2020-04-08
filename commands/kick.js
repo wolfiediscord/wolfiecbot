@@ -1,3 +1,5 @@
+const Discord = module.require("discord.js");
+const { Client, MessageEmbed } = require("discord.js");
 module.exports.run = async (client, message, args) => {
   if (!message.guild)
     return message.channel.send(
