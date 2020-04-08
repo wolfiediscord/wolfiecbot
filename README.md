@@ -12,9 +12,9 @@ You'll need:
 ## Steps to set up:
 
 1. Follow [this tutorial](https://github.com/jagrosh/MusicBot/wiki/Getting-a-Bot-Token)
-2. Add the App Bot User to your Discord server using this link: `https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=2146958591` replacing `<CLIENT_ID>` with the Client ID found on the page of your App
-3. Remix [this repository](https://glitch.com/edit/#!/wolfiecbot-old)
-4. Set the `TOKEN` value in `.env` using the Bot User token (you should have this copied)
+2. Remix [this repository](https://glitch.com/edit/#!/wolfiecbot-old)
+3. Set the `TOKEN` value in `.env` using the Bot User token (you should have this copied)
+4. Add the App Bot User to your Discord server using this link: `https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=2146958591` replacing `<CLIENT_ID>` with the Client ID found on the page of your App
 
 **Note:** NEVER **EVER** SHARE YOUR TOKEN! People could mess up your server!
 
