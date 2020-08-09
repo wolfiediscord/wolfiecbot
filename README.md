@@ -18,7 +18,7 @@ You'll need:
 
 **Note:** NEVER **EVER** SHARE YOUR TOKEN! People could mess up your server!
 
-**Notice:** If you would like your bot to run 24/7, Use [UptimeRobot](https://uptimerobot.com/), A service which allows you to monitor your bot and ping it for a duration of time.
+**Notice:** If you would like your bot to run 24/7, boost the project by becoming a [Glitch Member](https://glitch.com/pricing).
 
 ## The code
 
